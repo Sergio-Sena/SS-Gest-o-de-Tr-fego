@@ -1,0 +1,295 @@
+/* Mobile First - Guia IA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8fafc;
+}
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.back-btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.content {
+    padding: 3rem 0;
+}
+
+.section {
+    background: white;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+    color: #1e293b;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section h3 {
+    color: #374151;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.tool-card {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #6366f1;
+    transition: all 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tool-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.tool-description {
+    color: #64748b;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.tool-use-case {
+    background: #e0e7ff;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #3730a3;
+}
+
+.prompt-example {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    font-family: 'Courier New', monospace;
+    position: relative;
+    font-size: 0.85rem;
+    overflow-x: auto;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+
+.workflow-step {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    border-left: 4px solid #0ea5e9;
+}
+
+.step-number {
+    background: #0ea5e9;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+}
+
+.automation-card {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    border: 2px solid #f59e0b;
+}
+
+.automation-card h4 {
+    color: #92400e;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+}
+
+.benefit-list li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.benefit-list li::before {
+    content: '✅';
+    font-size: 1rem;
+}
+
+/* Tablet - 768px and up */
+@media (min-width: 768px) {
+    .header {
+        padding: 4rem 0;
+    }
+    
+    .header h1 {
+        font-size: 3rem;
+    }
+    
+    .header p {
+        font-size: 1.2rem;
+    }
+    
+    .container {
+        padding: 0 2rem;
+    }
+    
+    .content {
+        padding: 4rem 0;
+    }
+    
+    .section {
+        margin-bottom: 3rem;
+        padding: 3rem;
+    }
+    
+    .section h2 {
+        font-size: 2rem;
+    }
+    
+    .section h3 {
+        font-size: 1.3rem;
+        margin: 2rem 0 1rem 0;
+    }
+    
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .tool-card {
+        padding: 2rem;
+    }
+    
+    .tool-name {
+        font-size: 1.2rem;
+    }
+    
+    .tool-description {
+        font-size: 1rem;
+    }
+    
+    .tool-use-case {
+        font-size: 0.9rem;
+    }
+    
+    .prompt-example {
+        padding: 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .copy-btn {
+        font-size: 0.8rem;
+    }
+    
+    .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    
+    .automation-card {
+        padding: 2rem;
+    }
+    
+    .automation-card h4 {
+        font-size: 1.2rem;
+    }
+    
+    .benefit-list li {
+        font-size: 1rem;
+    }
+    
+    .benefit-list li::before {
+        font-size: 1.2rem;
+    }
+}
+
+/* Desktop - 1024px and up */
+@media (min-width: 1024px) {
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

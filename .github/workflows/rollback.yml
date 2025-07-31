@@ -1,0 +1,47 @@
+name: Rollback Production
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Rollback tag (rollback-YYYYMMDD-HHMMSS)'
+        required: true
+        type: string
+
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout rollback version
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.tag }}
+      
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+      
+      - name: Deploy rollback version
+        run: |
+          aws s3 sync . s3://${{ secrets.S3_BUCKET }} \
+            --exclude ".git/*" \
+            --exclude ".github/*" \
+            --exclude "README.md" \
+            --exclude "AWS-DEPLOY-GUIDE.md" \
+            --delete
+      
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
+      
+      - name: Notify rollback success
+        run: |
+          echo "🔄 Rollback successful!"
+          echo "Restored to: ${{ github.event.inputs.tag }}"
+          echo "Site: https://trafego.seudominio.com.br"

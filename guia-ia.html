@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de IA para Gestores de Tráfego - Sergio Sena</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/guia-ia.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Voltar ao Site
+            </a>
+            <h1><i class="fas fa-robot"></i> IA para Gestores de Tráfego</h1>
+            <p>Guia completo para usar Inteligência Artificial e aumentar sua produtividade</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <!-- Ferramentas de IA -->
+            <div class="section">
+                <h2><i class="fas fa-tools"></i> Principais Ferramentas de IA</h2>
+                
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-name">ChatGPT / Claude</div>
+                        <div class="tool-description">IA conversacional para criação de textos, análises e estratégias</div>
+                        <div class="tool-use-case">
+                            <strong>Use para:</strong> Criar copies de anúncios, analisar dados, gerar ideias de campanhas, escrever relatórios
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-name">Canva AI / Leonardo.AI</div>
+                        <div class="tool-description">Geração de imagens e designs para anúncios</div>
+                        <div class="tool-use-case">
+                            <strong>Use para:</strong> Criar banners, imagens de produtos, backgrounds, elementos visuais únicos
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-name">Copy.ai / Jasper</div>
+                        <div class="tool-description">IA especializada em copywriting e marketing</div>
+                        <div class="tool-use-case">
+                            <strong>Use para:</strong> Headlines, descrições de produtos, emails de follow-up, landing pages
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-name">Zapier AI / Make</div>
+                        <div class="tool-description">Automação de tarefas entre diferentes plataformas</div>
+                        <div class="tool-use-case">
+                            <strong>Use para:</strong> Automatizar relatórios, integrar dados, notificações automáticas
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-name">Google Analytics Intelligence</div>
+                        <div class="tool-description">IA nativa do Google para análise de dados</div>
+                        <div class="tool-use-case">
+                            <strong>Use para:</strong> Insights automáticos, detecção de anomalias, previsões de performance
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-name">Meta AI (Facebook)</div>
+                        <div class="tool-description">IA integrada às plataformas Meta para otimização</div>
+                        <div class="tool-use-case">
+                            <strong>Use para:</strong> Otimização automática de lances, segmentação inteligente, creative testing
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prompts Práticos -->
+            <div class="section">
+                <h2><i class="fas fa-magic"></i> Prompts Práticos para o Dia a Dia</h2>
+
+                <h3>1. Criação de Copies de Anúncios</h3>
+                <div class="prompt-example">
+                    <button class="copy-btn" onclick="copyToClipboard(this)">Copiar</button>
+Crie 5 copies diferentes para anúncios do Facebook/Instagram para:
+
+Produto/Serviço: [DESCREVA SEU PRODUTO]
+Público-alvo: [IDADE, GÊNERO, INTERESSES]
+Objetivo: [VENDAS/LEADS/TRÁFEGO]
+Tom: [URGÊNCIA/EDUCATIVO/EMOCIONAL]
+
+Inclua:
+- Headlines chamativas (máx 40 caracteres)
+- Texto principal (máx 125 caracteres)
+- Call-to-action específico
+- Emojis relevantes
+
+Formato: Cada copy em um bloco separado com título, texto e CTA.
+                </div>
+
+                <h3>2. Análise de Performance de Campanhas</h3>
+                <div class="prompt-example">
+                    <button class="copy-btn" onclick="copyToClipboard(this)">Copiar</button>
+Analise os dados da minha campanha e sugira otimizações:
+
+DADOS DA CAMPANHA:
+- Impressões: [NÚMERO]
+- Cliques: [NÚMERO]  
+- CTR: [%]
+- CPC: R$ [VALOR]
+- Conversões: [NÚMERO]
+- CPA: R$ [VALOR]
+- ROAS: [VALOR]
+- Orçamento diário: R$ [VALOR]
+
+Forneça:
+1. Diagnóstico da performance atual
+2. 3 principais problemas identificados
+3. Sugestões específicas de otimização
+4. Próximos passos prioritários
+                </div>
+
+                <h3>3. Pesquisa de Palavras-chave</h3>
+                <div class="prompt-example">
+                    <button class="copy-btn" onclick="copyToClipboard(this)">Copiar</button>
+Gere uma lista de palavras-chave para Google Ads:
+
+Negócio: [DESCREVA SEU NEGÓCIO]
+Localização: [CIDADE/REGIÃO]
+Público: [PERFIL DO CLIENTE IDEAL]
+
+Preciso de:
+- 20 palavras-chave de cauda longa
+- 10 palavras-chave locais
+- 5 palavras-chave de marca/concorrentes
+- Intenção de busca para cada uma
+- Sugestão de correspondência (exata, frase, ampla)
+
+Organize em tabela com colunas: Palavra-chave | Intenção | Correspondência | Volume estimado
+                </div>
+
+                <h3>4. Criação de Relatórios</h3>
+                <div class="prompt-example">
+                    <button class="copy-btn" onclick="copyToClipboard(this)">Copiar</button>
+Crie um relatório executivo baseado nestes dados:
+
+PERÍODO: [DATA INÍCIO - DATA FIM]
+PLATAFORMA: [GOOGLE ADS/META ADS/AMBAS]
+
+MÉTRICAS:
+- Investimento: R$ [VALOR]
+- Receita: R$ [VALOR]
+- Conversões: [NÚMERO]
+- CPA: R$ [VALOR]
+- ROAS: [VALOR]
+- CTR: [%]
+
+ESTRUTURA DO RELATÓRIO:
+1. Resumo executivo (3 linhas)
+2. Principais resultados (bullet points)
+3. Análise de performance vs mês anterior
+4. Insights e oportunidades
+5. Recomendações para próximo período
+                </div>
+            </div>
+
+            <!-- Automações -->
+            <div class="section">
+                <h2><i class="fas fa-cogs"></i> Automações que Economizam Tempo</h2>
+
+                <div class="automation-card">
+                    <h4><i class="fas fa-chart-bar"></i> Relatórios Automáticos</h4>
+                    <p><strong>Ferramentas:</strong> Google Looker Studio + Zapier + ChatGPT API</p>
+                    <p><strong>Como funciona:</strong> Dados são coletados automaticamente das plataformas, processados pela IA e enviados por email/WhatsApp para o cliente toda semana.</p>
+                    <ul class="benefit-list">
+                        <li>Economiza 5-8 horas por semana</li>
+                        <li>Relatórios sempre no prazo</li>
+                        <li>Insights automáticos incluídos</li>
+                    </ul>
+                </div>
+
+                <div class="automation-card">
+                    <h4><i class="fas fa-bullseye"></i> Otimização de Lances</h4>
+                    <p><strong>Ferramentas:</strong> Google Ads Scripts + IA de Machine Learning</p>
+                    <p><strong>Como funciona:</strong> Scripts monitoram performance e ajustam lances automaticamente baseado em regras pré-definidas.</p>
+                    <ul class="benefit-list">
+                        <li>Otimização 24/7</li>
+                        <li>Reação rápida a mudanças</li>
+                        <li>Melhora o ROAS em 15-30%</li>
+                    </ul>
+                </div>
+
+                <div class="automation-card">
+                    <h4><i class="fas fa-comments"></i> Atendimento ao Cliente</h4>
+                    <p><strong>Ferramentas:</strong> Chatbot com IA + WhatsApp Business API</p>
+                    <p><strong>Como funciona:</strong> IA responde perguntas frequentes, qualifica leads e agenda reuniões automaticamente.</p>
+                    <ul class="benefit-list">
+                        <li>Atendimento 24/7</li>
+                        <li>Qualificação automática de leads</li>
+                        <li>Mais tempo para tarefas estratégicas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Workflow com IA -->
+            <div class="section">
+                <h2><i class="fas fa-project-diagram"></i> Workflow Completo com IA</h2>
+
+                <div class="workflow-step">
+                    <span class="step-number">1</span>
+                    <strong>Briefing do Cliente</strong>
+                    <p>Use IA para criar questionários personalizados e analisar respostas do cliente, identificando oportunidades e desafios.</p>
+                </div>
+
+                <div class="workflow-step">
+                    <span class="step-number">2</span>
+                    <strong>Pesquisa de Mercado</strong>
+                    <p>IA analisa concorrentes, tendências do setor e comportamento do público-alvo, gerando insights estratégicos.</p>
+                </div>
+
+                <div class="workflow-step">
+                    <span class="step-number">3</span>
+                    <strong>Criação de Campanhas</strong>
+                    <p>Gere copies, imagens e estruturas de campanhas usando IA, testando múltiplas variações simultaneamente.</p>
+                </div>
+
+                <div class="workflow-step">
+                    <span class="step-number">4</span>
+                    <strong>Monitoramento Inteligente</strong>
+                    <p>IA monitora performance 24/7, detecta anomalias e sugere otimizações em tempo real.</p>
+                </div>
+
+                <div class="workflow-step">
+                    <span class="step-number">5</span>
+                    <strong>Relatórios e Insights</strong>
+                    <p>Relatórios automáticos com análises profundas e recomendações estratégicas geradas por IA.</p>
+                </div>
+            </div>
+
+            <!-- ROI da IA -->
+            <div class="section">
+                <h2><i class="fas fa-chart-line"></i> ROI do Uso de IA</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0;">
+                    <div style="background: #dcfce7; padding: 2rem; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 700; color: #16a34a;">70%</div>
+                        <div style="color: #15803d;">Redução no tempo de criação</div>
+                    </div>
+                    <div style="background: #dbeafe; padding: 2rem; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 700; color: #2563eb;">45%</div>
+                        <div style="color: #1d4ed8;">Melhoria na performance</div>
+                    </div>
+                    <div style="background: #fef3c7; padding: 2rem; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 700; color: #d97706;">3x</div>
+                        <div style="color: #b45309;">Mais clientes atendidos</div>
+                    </div>
+                    <div style="background: #fce7f3; padding: 2rem; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 700; color: #be185d;">R$ 5k+</div>
+                        <div style="color: #9d174d;">Aumento na receita mensal</div>
+                    </div>
+                </div>
+
+                <h3>Investimento vs Retorno</h3>
+                <p>Investimento inicial em ferramentas de IA: <strong>R$ 200-500/mês</strong></p>
+                <p>Retorno esperado em 3 meses: <strong>R$ 3.000-8.000/mês</strong> (através de mais clientes e melhor eficiência)</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/guia-ia.js"></script>
+</body>
+</html>

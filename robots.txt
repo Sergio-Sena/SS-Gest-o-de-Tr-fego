@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ssgestaotrafego.com.br/sitemap.xml
+
+# Principais páginas para indexação
+Allow: /index.html
+Allow: /calculadora-roi.html
+Allow: /guia-ia.html
+
+# Arquivos CSS e JS
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Desallow arquivos desnecessários
+Disallow: /README.md
+Disallow: *.md$
