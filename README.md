@@ -3,7 +3,7 @@
 Site moderno e otimizado para **SS Gestão de Tráfego**, especializada em Google Ads e Facebook Ads com ROI garantido.
 
 ## 🌐 Site Online
-- **Produção**: https://trafego.seudominio.com.br
+- **Produção**: https://ssgestaodetrafego.sstechnologies-cloud.com
 - **Repositório**: https://github.com/Sergio-Sena/SS-Gest-o-de-Tr-fego
 
 ## 📋 Funcionalidades
@@ -22,7 +22,6 @@ Site moderno e otimizado para **SS Gestão de Tráfego**, especializada em Googl
 ### 🔍 **SEO Otimizado**
 - Meta tags completas
 - Schema markup (LocalBusiness)
-- FAQ otimizada para featured snippets
 - Sitemap.xml e robots.txt
 - Breadcrumbs estruturados
 
@@ -39,13 +38,6 @@ git push origin dev
 git checkout main
 git merge dev
 git push origin main  # ← Dispara deploy automático
-```
-
-### **Rollback**
-```bash
-# Via GitHub Actions (manual)
-# Ou via script local:
-./scripts/rollback.sh rollback-20250127-143000
 ```
 
 ## 🛠️ Tecnologias
@@ -83,13 +75,12 @@ SS-Gestão-de-Tráfego/
 ├── .github/workflows/     # GitHub Actions
 ├── css/                   # Estilos
 ├── js/                    # JavaScript
-├── scripts/               # Scripts de deploy
 ├── index.html             # Página principal
 ├── calculadora-roi.html   # Calculadora ROI
 ├── guia-ia.html          # Guia de IA
 ├── sitemap.xml           # Sitemap SEO
 ├── robots.txt            # Robots SEO
-└── AWS-DEPLOY-GUIDE.md   # Guia de deploy AWS
+└── README.md             # Documentação
 ```
 
 ## 🎨 Paleta de Cores
@@ -114,7 +105,6 @@ Texto: #e2e8f0 (Branco acinzentado)
 - Botão principal: "Quero Aumentar Minhas Vendas"
 - Botão secundário: "Calcular ROI"
 - WhatsApp flutuante sempre visível
-- CTA fixo mobile
 
 ### **Prova Social**
 - R$ 2M+ gerados para clientes

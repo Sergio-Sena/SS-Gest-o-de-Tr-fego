@@ -1,0 +1,25 @@
+# Arquivos de configuração AWS
+*.json
+*.yaml
+*.yml
+*.sh
+
+# Logs e temporários
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Documentação técnica
+*-GUIDE.md
+*-DEPLOY*.md
+*-CDN*.md
+*-URLS*.md
+FLUXO-*.md
+TEMPLATE-*.md
+
+# Pastas de configuração
+aws-*/
+scripts/
+config/
+deploy/
