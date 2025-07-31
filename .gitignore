@@ -1,8 +1,8 @@
 # Arquivos de configuração AWS
 *.json
-*.yaml
-*.yml
 *.sh
+# Permitir .gitlab-ci.yml
+!.gitlab-ci.yml
 
 # Logs e temporários
 *.log

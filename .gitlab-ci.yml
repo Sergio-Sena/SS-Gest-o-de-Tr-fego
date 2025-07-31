@@ -1,0 +1,24 @@
+# 📈 GitLab CI/CD - SS Gestão de Tráfego
+stages:
+  - deploy
+  - invalidate
+
+variables:
+  S3_BUCKET: "ssgestaodetrafego-site"
+
+deploy_s3:
+  stage: deploy
+  image: amazon/aws-cli:latest
+  script:
+    - aws s3 sync . s3://$S3_BUCKET --exclude "*.md" --exclude ".git/*" --exclude ".github/*" --delete
+  only:
+    - main
+
+invalidate_cache:
+  stage: invalidate
+  image: amazon/aws-cli:latest
+  script:
+    - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+  only:
+    - main
+  when: manual
