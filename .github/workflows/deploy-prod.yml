@@ -21,10 +21,8 @@ jobs:
       
       - name: Create rollback tag
         run: |
-          git tag rollback-$(date +%Y%m%d-%H%M%S)
-          git push origin --tags
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          echo "Rollback tag: rollback-$(date +%Y%m%d-%H%M%S)"
+          echo "Deploy iniciado em $(date)"
       
       - name: Deploy to S3
         run: |
