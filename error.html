@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página não encontrada | SS Gestão de Tráfego</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <h1>404</h1>
+            <h2>Página não encontrada</h2>
+            <p>A página que você está procurando não existe ou foi movida.</p>
+            <div class="error-actions">
+                <a href="/" class="btn-primary">Voltar ao Início</a>
+                <a href="/calculadora-roi.html" class="btn-secondary">Calculadora ROI</a>
+                <a href="/guia-ia.html" class="btn-secondary">Guia de IA</a>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .error-content h1 {
+            font-size: 6rem;
+            margin: 0;
+            font-weight: bold;
+        }
+        .error-content h2 {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+        .error-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .error-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn-primary, .btn-secondary {
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: #ff6b6b;
+            color: white;
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        .btn-primary:hover, .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</body>
+</html>
