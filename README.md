@@ -3,7 +3,7 @@
 Site moderno e otimizado para **SS Gestão de Tráfego**, especializada em Google Ads e Facebook Ads com ROI garantido.
 
 ## 🌐 Site Online
-- **Produção**: https://ssgestaodetrafego.sstechnologies-cloud.com
+- **Produção**: https://sstrafegopago.sstechnologies-cloud.com
 - **Repositório**: https://github.com/Sergio-Sena/SS-Gest-o-de-Tr-fego
 
 ## 📋 Funcionalidades
